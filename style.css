@@ -289,6 +289,78 @@ input:focus {
     background: rgba(129, 140, 248, 0.05);
 }
 
+/* Media Queries for Mobile */
+@media (max-width: 850px) {
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 1fr auto;
+        overflow-y: auto;
+    }
+
+    .sidebar {
+        border-right: none;
+        border-bottom: 1px solid var(--border);
+        padding: 1rem;
+        flex-direction: row;
+        overflow-x: auto;
+        overflow-y: hidden;
+        height: auto;
+        gap: 1.5rem;
+    }
+
+    .sidebar .control-group {
+        min-width: 200px;
+    }
+
+    .sidebar .control-group:last-child {
+        margin-top: 0;
+    }
+
+    .preview-container {
+        padding: 1rem;
+        min-height: 300px;
+    }
+
+    .timeline-container {
+        height: auto;
+        min-height: 180px;
+    }
+
+    .timeline-track {
+        padding-bottom: 15px;
+    }
+
+    header {
+        padding: 0.5rem 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+
+    #editor-overlay div {
+        width: 90% !important;
+        padding: 1.5rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        overflow: visible;
+    }
+    
+    .sidebar .control-group {
+        min-width: 0;
+    }
+
+    .header-actions .btn span {
+        display: none;
+    }
+}
+
 /* Animations */
 @keyframes fadeIn {
     from { opacity: 0; transform: translateY(10px); }

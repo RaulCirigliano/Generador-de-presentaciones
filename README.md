@@ -1,4 +1,4 @@
- 🎬 VisualFlow - Premium Image-to-Video Compiler
+# 🎬 VisualFlow - Premium Image-to-Video Compiler
 
 VisualFlow es una aplicación web de alto rendimiento diseñada para crear presentaciones de video profesionales directamente en el navegador. Combina la potencia de **HTML5 Canvas** con la **MediaRecorder API** para ofrecer una experiencia de edición fluida, sin necesidad de servidores ni procesamiento externo.
 
